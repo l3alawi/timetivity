@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import moment from 'moment';
 
 const Header = () => {
-  const toDay = moment().format('YYYY-MM-DD');
+  const toDay = moment().format('dddd D MMMM');
   const timeNow = moment().format('h:mm:ss');
   const [ time, tick ] = useState(timeNow);
   const [ day, getDay ] = useState(toDay);
@@ -14,15 +14,10 @@ const Header = () => {
       clearInterval(intervalID);
     }
   });
-  useEffect(() => getDay(moment().format('YYYY-MM-DD')))
+  useEffect(() => getDay(moment().format('dddd D MMMM')))
   return(
-    <div className="columns is-mobile">
-      <div className="column is-6">
-        <h1>{ day }</h1>
-      </div>
-      <div className="column is-6">
-        <h1>{ time }</h1>
-      </div>
+    <div className="">
+      <h1 className="dateStyle">{ day }</h1>
     </div>
   )
 }

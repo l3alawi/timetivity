@@ -1,0 +1,20 @@
+html{
+  background-color: #D3D3D3D3;
+}
+
+.box0{
+  margin: 3%;
+  background-color: white;
+  box-shadow: 0 0px 12px 0 rgba(10, 10, 10, 0.1);
+  border-radius: 6px;
+  padding: 1.25rem;
+}
+
+.dateStyle{
+  font-family: 'Roboto', sans-serif;
+  color: grey;
+  font-size: 10px;
+  font-weight: 900;
+  margin-left: 4%;
+  margin-top: 2%;
+}

@@ -2,18 +2,16 @@ import React from 'react';
 
 const LifeNode = () => {
   return(
-    <section class="hero is-success is-fullheight">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        Fullheight title
-      </h1>
-      <h2 class="subtitle">
-        Fullheight subtitle
-      </h2>
+    <div className="box0">
+      <div className="columns is-mobile">
+        <div className="column is-6">
+          <h1>l3alawi</h1>
+        </div>
+        <div className="column is-6">
+          <h1>lm9awed</h1>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
 
   )
 }
