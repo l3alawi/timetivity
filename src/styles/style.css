@@ -1,5 +1,7 @@
-html{
-  background-color: #D3D3D3D3;
+body{
+  background-color: #fafafa;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .box0{
@@ -17,4 +19,11 @@ html{
   font-weight: 900;
   margin-left: 4%;
   margin-top: 2%;
+}
+
+.timeStyle{
+  font-family: 'Roboto', sans-serif;
+  color: grey;
+  font-size: 35px;
+  font-weight: 100;
 }

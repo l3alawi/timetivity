@@ -3,7 +3,7 @@ import moment from 'moment';
 
 const Header = () => {
   const toDay = moment().format('dddd D MMMM');
-  const timeNow = moment().format('h:mm:ss');
+  const timeNow = moment().format('HH:mm:ss');
   const [ time, tick ] = useState(timeNow);
   const [ day, getDay ] = useState(toDay);
   useEffect(() => {
@@ -16,8 +16,13 @@ const Header = () => {
   });
   useEffect(() => getDay(moment().format('dddd D MMMM')))
   return(
-    <div className="">
-      <h1 className="dateStyle">{ day }</h1>
+    <div className="columns is-mobile is-gapless is-vcentered">
+      <div className="column is-6">
+        <p className="dateStyle">{ day }</p>
+      </div>
+      <div className="column is-6">
+        <p className="timeStyle">{ time }</p>
+      </div>
     </div>
   )
 }

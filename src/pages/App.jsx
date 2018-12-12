@@ -7,6 +7,8 @@ const App = () => {
   <div>
     <Header />
     <LifeNodes />
+    <LifeNodes />
+    <LifeNodes />
   </div>)
 }
 
