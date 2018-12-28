@@ -5,7 +5,7 @@ const setTime = () => {
   const m = moment();
   const second = m.format('ss');
   const minute = m.format('mm');
-  const hour = m.format('hh');
+  const hour = m.format('H');
   return {
     hour,
     minute,
