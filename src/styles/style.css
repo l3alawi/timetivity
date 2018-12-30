@@ -34,3 +34,17 @@ body{
   font-size: 25px;
   font-weight: 100;
 }
+
+.daysStyle{
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.showDay{
+  
+}
+
+.hideDay {
+  display: none;
+}
